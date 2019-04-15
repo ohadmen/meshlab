@@ -12,3 +12,15 @@ MeshLab is mostly based on the open source c++ mesh processing library [VCGlib](
 
 Compiling instruction can be found in the [src](https://github.com/cnr-isti-vclab/meshlab/tree/master/src) folder or simply looking at the continous integration setup on [travis](https://travis-ci.org/cnr-isti-vclab/meshlab/builds) and [appveyor](https://ci.appveyor.com/project/cignoni/meshlab/history).
  
+#!build:
+sudo apt install qt5-qmake qtscript5-dev libqt5xmlpatterns5-dev libqt5widgets5 libqt5gui5 libqt5network5 libqt5core5a libdouble-conversion1 libxcb-xinerama0
+cd meshlab/src/external
+qmake -qt=5 external.pro
+make 
+cd ../common
+qmake -qt=5 common.pro
+make 
+cp external/lib/linux/* external/lib/linux-g++
+cd ..
+qmake -qt=5 meshlab_full.pro
+make 
