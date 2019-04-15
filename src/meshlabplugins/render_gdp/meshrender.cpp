@@ -57,7 +57,7 @@ void MeshShaderRenderPlugin::initActionList() {
 			"Unable to find the shaders directory.\n"
 			"No shaders will be loaded.");
 	}
-	qDebug("Shader directory found '%s', and it contains %i gdp files", qUtf8Printable(shadersDir.path()), shadersDir.entryList(QStringList("*.gdp")).size());
+	//qDebug("Shader directory found '%s', and it contains %i gdp files", qUtf8Printable(shadersDir.path()), shadersDir.entryList(QStringList("*.gdp")).size());
 
 
 	QDomDocument doc;

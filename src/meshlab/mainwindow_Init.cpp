@@ -1127,6 +1127,7 @@ void MainWindow::saveRecentProjectList(const QString &projName)
 
 void MainWindow::checkForUpdates(bool verboseFlag)
 {
+	return;
 	VerboseCheckingFlag = verboseFlag;
 	QSettings settings;
 	int totalKV = settings.value("totalKV", 0).toInt();

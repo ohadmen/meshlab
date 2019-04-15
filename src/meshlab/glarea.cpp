@@ -619,7 +619,7 @@ void GLArea::paintEvent(QPaintEvent* /*event*/)
         if(Pick<Point3f>(pointToPick[0],pointToPick[1],pp))
         {
             // write picked point in the log
-            Logf(0,"Recentering on point [%f %f %f] [%d,%d]",pp[0],pp[1],pp[2],pointToPick[0],pointToPick[1]);
+            //Logf(0,"Recentering on point [%f %f %f] [%d,%d]",pp[0],pp[1],pp[2],pointToPick[0],pointToPick[1]);
         }
     }
 

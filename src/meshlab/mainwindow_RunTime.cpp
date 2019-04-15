@@ -2958,7 +2958,7 @@ bool MainWindow::importMesh(QString fileName,bool isareload)
         bool open = loadMesh(fileName,pCurrentIOPlugin,mm,mask,&prePar,mtr,isareload);
         if(open)
         {
-			GLA()->Logf(0, "Opened mesh %s in %i msec", qUtf8Printable(fileName), t.elapsed());
+			//GLA()->Logf(0, "Opened mesh %s in %i msec", qUtf8Printable(fileName), t.elapsed());
             RichParameterSet par;
             pCurrentIOPlugin->initOpenParameter(extension, *mm, par);
             if(!par.isEmpty())
@@ -2985,7 +2985,7 @@ bool MainWindow::importMesh(QString fileName,bool isareload)
 			GLA()->Logf(0, "Warning: Mesh %s has not been opened", qUtf8Printable(fileName));
         }
     }// end foreach file of the input list
-    GLA()->Logf(0,"All files opened in %i msec",allFileTime.elapsed());
+    //GLA()->Logf(0,"All files opened in %i msec",allFileTime.elapsed());
 
 	if (_currviewcontainer != NULL)
 	{
@@ -3036,7 +3036,7 @@ bool MainWindow::loadMeshWithStandardParams(QString& fullPath, MeshModel* mm, co
         bool open = loadMesh(fullPath,pCurrentIOPlugin,mm,mask,&prePar,mtr,isreload, rendOpt);
         if(open)
         {
-			GLA()->Logf(0, "Opened mesh %s in %i msec", qUtf8Printable(fullPath), t.elapsed());
+			//GLA()->Logf(0, "Opened mesh %s in %i msec", qUtf8Printable(fullPath), t.elapsed());
             RichParameterSet par;
             pCurrentIOPlugin->initOpenParameter(extension, *mm, par);
             pCurrentIOPlugin->applyOpenParameter(extension,*mm,par);

@@ -74,7 +74,7 @@ void PluginManager::loadPlugins(RichParameterSet& defaultGlobal)
 	//only the file with extension pluginfilters will be listed by function entryList()
 	pluginsDir.setNameFilters(pluginfilters);
 
-	qDebug("Current Plugins Dir is: %s ", qUtf8Printable(pluginsDir.absolutePath()));
+	//qDebug("Current Plugins Dir is: %s ", qUtf8Printable(pluginsDir.absolutePath()));
 	scriptplugcode = "";
 	ScriptAdapterGenerator gen;
 	scriptplugcode += gen.mergeOptParamsCodeGenerator() + "\n";
