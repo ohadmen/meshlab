@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=MeshLab_64bit v1.3.3
+Icon=meshlab_64bit
+Path=/home/menashoh/meshlab
+Exec=./meshlab %U
+StartupNotify=false
+StartupWMClass=MeshLab_64bit
+OnlyShowIn=Unity;
+X-UnityGenerated=true

@@ -24,3 +24,5 @@ cp external/lib/linux/* external/lib/linux-g++
 cd ..
 qmake -qt=5 meshlab_full.pro
 make 
+
+cp meshlab.desktop ~/.local/share/applications/
